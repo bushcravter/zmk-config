@@ -53,7 +53,7 @@
         hypen_underscore: hypen_underscore {
             compatible = "zmk,behavior-mod-morph";
             label = "HYPEN_UNDERSCORE";
-            bindings = <&kp MINUS>, <&kp UNDER>;
+            bindings = <&kp SLASH>, <&kp LS(SLASH)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
