@@ -103,7 +103,7 @@
 &kp TAB    &kp N1            &kp N2             &kp N3                 &kp N4     &kp N5            &kp TAB  &kp LG(A)      &kp N6    &kp N7    &kp N8     &kp N9     &kp N0         &kp DEL
 &kp LCTRL  &kp LS(NUMBER_7)  &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp SLASH  &kp LS(NUMBER_5)  &kp F19  &kp LG(SPACE)  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &mt LCTRL ESC  &kp CAPSLOCK
 &kp LSHFT  &bt BT_CLR        &rgb_ug RGB_TOG    &sys_reset             &kp F17    &kp F15                                   &kp F12   &kp F16   &kp F14    &kp F13    &kp K_EJECT    &kp LEFT_SHIFT
-                                                &kp LGUI               &trans     &kp SPACE                                 &kp LGUI  &trans    &kp SPACE
+                                                &kp LGUI               &trans     &kp SPACE                                 &kp LGUI  &mo 3     &kp SPACE
             >;
         };
 
