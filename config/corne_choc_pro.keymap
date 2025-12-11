@@ -141,10 +141,10 @@
         extra_layer_1 {
             display-name = "EXTRA 1";
             bindings = <
-&trans  &trans  &trans   &trans    &kp F22  &trans     &kp TAB  &kp LG(A)  &trans     &trans  &trans    &trans   &trans  &trans
-&trans  &trans  &kp F23  &trans    &trans   &trans     &kp F19  &kp LG(H)  &trans     &trans  &trans    &kp F21  &trans  &trans
-&trans  &trans  &trans   &trans    &trans   &kp F24                        &trans     &trans  &trans    &trans   &trans  &trans
-                         &kp LGUI  &trans   &kp ENTER                      &kp SPACE  &trans  &kp RGUI
+&kp C_BACKLIGHT_TOGGLE  &trans  &trans   &trans    &kp F22  &trans     &kp TAB  &kp LG(A)  &trans     &trans  &trans    &trans   &trans  &trans
+&trans                  &trans  &kp F23  &trans    &trans   &trans     &kp F19  &kp LG(H)  &trans     &trans  &trans    &kp F21  &trans  &trans
+&trans                  &trans  &trans   &trans    &trans   &kp F24                        &trans     &trans  &trans    &trans   &trans  &trans
+                                         &kp LGUI  &trans   &kp ENTER                      &kp SPACE  &trans  &kp RGUI
             >;
         };
 
