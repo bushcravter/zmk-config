@@ -100,10 +100,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&mt LCTRL ESC   &kp N1            &kp N2             &kp N3                 &kp N4     &kp N5            &kp TAB  &kp LG(A)  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0         &kp DEL
-&kp LEFT_SHIFT  &kp LS(NUMBER_7)  &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp SLASH  &kp LS(NUMBER_5)  &kp F19  &kp LG(H)  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &mt LCTRL ESC  &kp CAPSLOCK
-&kp LEFT_ALT    &bt BT_CLR        &rgb_ug RGB_TOG    &sys_reset             &kp F17    &kp F15                               &kp F12   &kp F16   &kp F14    &kp F13    &kp C_EJECT    &kp LEFT_SHIFT
-                                                     &kp LGUI               &trans     &kp SPACE                             &kp LGUI  &mo 3     &kp SPACE
+&mt LCTRL ESC   &kp N1            &kp N2             &kp N3                 &kp N4     &kp N5            &kp TAB  &kp LG(A)  &kp N6     &kp N7    &kp N8    &kp N9     &kp N0            &kp DEL
+&kp LEFT_SHIFT  &kp LS(NUMBER_7)  &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp SLASH  &kp LS(NUMBER_5)  &kp F19  &kp LG(H)  &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &mt LCTRL ESC     &kp CAPSLOCK
+&kp LEFT_ALT    &bt BT_CLR        &rgb_ug RGB_TOG    &sys_reset             &kp F17    &kp F15                               &kp F12    &kp F16   &kp F14   &kp F13    &kp C_STOP_EJECT  &kp LEFT_SHIFT
+                                                     &kp LGUI               &trans     &kp ENTER                             &kp SPACE  &mo 3     &kp RGUI
             >;
         };
 
@@ -117,10 +117,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&mt LCTRL ESC   &mt LS(NUMBER_9) LS(NUMBER_8)  &mt RA(NUMBER_0) RA(NUMBER_7)  &mt RA(NUMBER_9) RA(NUMBER_8)  &mt LS(NUBS) NUBS  &kp LS(NUMBER_6)  &kp TAB  &kp LG(A)  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LEFT_SHIFT  &kp LS(NUMBER_4)               &kp RA(Q)                      &kp PIPE                       &kp LS(NUMBER_2)   &kp EQUAL         &kp F19  &kp LG(H)  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LEFT_ALT    &kp LS(MINUS)                  &kp LS(NUMBER_1)               &kp BACKSLASH                  &kp NUHS           &kp RA(MINUS)                         &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                                                              &kp LGUI                       &mo 3              &kp SPACE                             &kp RET    &trans     &kp RALT
+&mt LCTRL ESC   &mt LS(NUMBER_9) LS(NUMBER_8)  &mt RA(NUMBER_0) RA(NUMBER_7)  &mt RA(NUMBER_9) RA(NUMBER_8)  &mt LS(NUBS) NUBS  &kp LS(NUMBER_6)  &kp TAB  &kp LG(A)  &kp F1             &kp F2           &kp F3      &kp F4  &kp F5  &kp BSPC
+&kp LEFT_SHIFT  &kp LS(NUMBER_4)               &kp RA(Q)                      &kp PIPE                       &kp LS(NUMBER_2)   &kp EQUAL         &kp F19  &kp LG(H)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &trans  &trans  &trans
+&kp LEFT_ALT    &kp LS(MINUS)                  &kp LS(NUMBER_1)               &kp BACKSLASH                  &kp LS(BACKSLASH)  &kp RA(MINUS)                         &kp C_PREV         &kp C_NEXT       &kp C_STOP  &trans  &trans  &trans
+                                                                              &kp LGUI                       &mo 3              &kp ENTER                             &kp SPACE          &trans           &kp RALT
             >;
         };
 
