@@ -35,7 +35,7 @@
         comma_semicolon: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMICOLON";
-            bindings = <&kp COMMA>, <&kp SEMICOLON>;
+            bindings = <&kp COMMA>, <&kp LS(COMMA)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -83,9 +83,9 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&mt LCTRL ESCAPE  &kp Q  &kp W  &kp E     &kp R  &kp T      &kp TAB  &kp LG(A)  &kp Z      &kp U  &kp I             &kp O       &kp P              &kp BSPC
-&kp LSHFT         &kp A  &kp S  &kp D     &kp F  &kp G      &kp F19  &kp LG(H)  &kp H      &kp J  &kp K             &kp L       &kp SEMI           &kp SQT
-&kp LEFT_ALT      &kp Y  &kp X  &kp C     &kp V  &kp B                          &kp N      &kp M  &comma_semicolon  &dot_colon  &hypen_underscore  &kp LEFT_SHIFT
+&mt LCTRL ESCAPE  &kp Q  &kp W  &kp E     &kp R  &kp T      &kp TAB  &kp LG(A)  &kp Y      &kp U  &kp I             &kp O    &kp P              &kp BSPC
+&kp LSHFT         &kp A  &kp S  &kp D     &kp F  &kp G      &kp F19  &kp LG(H)  &kp H      &kp J  &kp K             &kp L    &kp SEMI           &kp SQT
+&kp LEFT_ALT      &kp Z  &kp X  &kp C     &kp V  &kp B                          &kp N      &kp M  &comma_semicolon  &kp DOT  &hypen_underscore  &kp LEFT_SHIFT
                                 &kp LGUI  &mo 1  &kp ENTER                      &kp SPACE  &mo 2  &kp RMETA
             >;
         };
