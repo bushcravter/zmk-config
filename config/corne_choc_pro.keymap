@@ -69,41 +69,16 @@
             flavor = "tap-preferred";
         };
 
-        hmr_shift_right: hmr_shift_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR_SHIFT_RIGHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <0 1 6 14 15 16 17 18 19 20 28 29 30 31 32 33 40 41 42 2 3 4 5>;
-        };
-
-        hmr_shift_left: hmr_shift_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HMR_SHIFT_LEFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <7 12 13 21 22 23 24 25 26 27 34 35 36 37 38 39 43 44 45 7 8 9 10 11 22 23 24 25>;
-        };
-
         hmr_right: hmr_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR_RIGHT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-on-release;
+            tapping-term-ms = <300>;
             hold-trigger-key-positions = <0 1 6 14 15 16 17 18 19 20 28 29 30 31 32 33 40 41 42 2 3 4 5>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
+            quick-tap-ms = <175>;
         };
 
         hmr_left: hmr_left {
@@ -112,11 +87,10 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            hold-while-undecided;
-            hold-trigger-on-release;
+            tapping-term-ms = <300>;
             hold-trigger-key-positions = <7 12 13 21 22 23 24 25 26 27 34 35 36 37 38 39 43 44 45 7 8 9 10 11 22 23 24 25>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
+            quick-tap-ms = <175>;
         };
     };
 
@@ -147,10 +121,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&mt LCTRL ESCAPE  &kp Q                 &kp W                         &kp E             &kp R              &kp T      &kp TAB  &kp LG(A)     &kp Y               &kp U                   &kp I                           &kp O                           &kp P                     &kp BSPC
-&kp LSHFT         &hmr_left LEFT_ALT A  &hmr_shift_left LEFT_SHIFT S  &hmr_left LGUI D  &hmr_left LCTRL F  &kp G      &kp F19  &kp CAPSLOCK  &hmr_right RCTRL H  &hmr_right RIGHT_GUI J  &hmr_shift_right RIGHT_SHIFT K  &hmr_shift_right RIGHT_SHIFT L  &hmr_right LEFT_ALT SEMI  &kp SQT
-&kp LEFT_ALT      &kp Z                 &kp X                         &kp C             &kp V              &kp B                             &kp N               &kp M                   &comma_semicolon                &dot_colon                      &minus_underscore         &kp LEFT_SHIFT
-                                                                      &kp LGUI          &mo 1              &kp ENTER                         &kp SPACE           &mo 2                   &kp RMETA
+&mt LCTRL ESCAPE  &kp Q                 &kp W                 &kp E                   &kp R              &kp T      &kp TAB  &kp LG(A)     &kp Y      &kp U               &kp I                &kp O                   &kp P                     &kp BSPC
+&kp LSHFT         &hmr_left LEFT_ALT A  &hmr_left LEFT_GUI S  &hmr_left LEFT_SHIFT D  &hmr_left LCTRL F  &kp G      &kp F19  &kp CAPSLOCK  &kp H      &hmr_right RCTRL J  &hmr_right RSHIFT K  &hmr_right RIGHT_GUI L  &hmr_right LEFT_ALT SEMI  &kp SQT
+&kp LEFT_ALT      &kp Z                 &kp X                 &kp C                   &kp V              &kp B                             &kp N      &kp M               &comma_semicolon     &dot_colon              &minus_underscore         &kp LEFT_SHIFT
+                                                              &kp LGUI                &mo 1              &kp ENTER                         &kp SPACE  &mo 2               &kp RMETA
             >;
         };
 
