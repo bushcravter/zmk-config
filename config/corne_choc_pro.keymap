@@ -177,7 +177,7 @@
 &rgb_ug RGB_TOG  &trans        &trans        &trans        &kp F22       &trans     &kp TAB  &kp LG(A)  &trans     &trans  &trans    &trans   &trans  &trans
 &rgb_ug RGB_EFR  &bt BT_CLR    &kp F23       &trans        &trans        &trans     &kp F19  &kp LG(H)  &trans     &trans  &trans    &kp F21  &trans  &trans
 &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp F24                        &trans     &trans  &trans    &trans   &trans  &trans
-                                             &kp LGUI      &trans        &kp ENTER                      &kp SPACE  &trans  &kp RGUI
+                                             &kp LGUI      &tog 3        &kp ENTER                      &kp SPACE  &tog 3  &kp RGUI
             >;
         };
 
