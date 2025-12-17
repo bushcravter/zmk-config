@@ -124,8 +124,15 @@
         to_layer1_red: to_layer1_red {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 1 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,100,50)>;
+            bindings = <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,100,50) &to 1>;
             label = "TO_LAYER1_RED";
+        };
+
+        layer_base: layer_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_OFF &to 0>;
+            label = "LAYER_BASE";
         };
     };
 
@@ -199,7 +206,7 @@
 &mt LCTRL ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp TAB  &kp LG(A)     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9  &kp NUMBER_0       &mt DELETE BACKSPACE
 &kp LEFT_SHIFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp F19  &kp CAPSLOCK  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9  &kp N0             &trans
 &kp LALT          &trans        &trans        &trans        &trans        &trans                               &trans        &trans        &comma_semicolon  &dot_colon    &minus_underscore  &trans
-                                              &kp LEFT_WIN  &tog 4        &kp ENTER                            &kp SPACE     &to 0         &kp RMETA
+                                              &kp LEFT_WIN  &tog 4        &kp ENTER                            &kp SPACE     &layer_base   &kp RMETA
             >;
         };
 
