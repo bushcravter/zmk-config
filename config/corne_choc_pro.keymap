@@ -188,10 +188,10 @@
         extra_layer_2 {
             display-name = "EXTRA 2";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &mt DELETE BACKSPACE
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0        &trans
 &trans  &trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans        &trans
-                                    &trans        &tog 4        &trans                        &trans        &trans        &trans
+                                    &trans        &tog 4        &trans                        &trans        &tog 0        &trans
             >;
         };
 
