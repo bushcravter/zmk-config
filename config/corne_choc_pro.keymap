@@ -187,10 +187,10 @@
         extra_layer_2 {
             display-name = "EXTRA 2";
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &mt DELETE BACKSPACE
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans  &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp N0        &trans
-&trans  &trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans        &trans
-                                    &trans        &tog 4        &trans                        &trans        &to 0         &trans
+&mt LCTRL ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp TAB  &kp LG(A)  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9  &kp NUMBER_0       &mt DELETE BACKSPACE
+&kp LEFT_SHIFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp F19  &trans     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9  &kp N0             &trans
+&kp LALT          &trans        &trans        &trans        &trans        &trans                            &trans        &trans        &comma_semicolon  &dot_colon    &minus_underscore  &trans
+                                              &kp LEFT_WIN  &tog 4        &kp ENTER                         &kp SPACE     &to 0         &kp RMETA
             >;
         };
 
