@@ -240,7 +240,7 @@
 &rgb_ug RGB_TOG  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans        &kp F22       &kp F21    &kp TAB  &kp LG(A)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mmv MOVE_X(-600)  &mmv MOVE_X(600)
 &rgb_ug RGB_EFR  &bt BT_CLR      &kp F23          &trans        &trans        &trans     &kp F19  &kp CAPS   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans             &trans
 &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &kp F24                        &mkp LCLK       &mkp RCLK       &mkp MCLK     &trans           &trans             &trans
-                                                  &kp LGUI      &tog 4        &kp ENTER                      &kp SPACE       &layer3_off     &kp RGUI
+                                                  &kp LGUI      &layer3_off   &kp ENTER                      &kp SPACE       &to 4           &kp RGUI
             >;
         };
 
@@ -250,7 +250,7 @@
 &mt LCTRL ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp TAB  &kp LG(A)     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9  &kp NUMBER_0       &mt DELETE BACKSPACE
 &kp LEFT_SHIFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp F19  &kp CAPSLOCK  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9  &kp N0             &trans
 &kp LALT          &trans        &trans        &trans        &trans        &trans                               &trans        &trans        &comma_semicolon  &dot_colon    &minus_underscore  &trans
-                                              &kp LEFT_WIN  &to 0         &kp ENTER                            &kp SPACE     &to 0         &kp RMETA
+                                              &kp LEFT_WIN  &to 0         &kp ENTER                            &kp SPACE     &trans        &kp RMETA
             >;
         };
 
