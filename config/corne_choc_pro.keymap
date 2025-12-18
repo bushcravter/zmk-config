@@ -18,10 +18,11 @@
 
 / {
     behaviors {
-         /*
+        /*
          * DEFINITION: Optimized Mouse Movement
          * Goal: High precision at start, high speed after hold
          */
+
         mmv_custom: mouse_move_custom {
             compatible = "zmk,behavior-input-two-axis";
             #binding-cells = <1>;
@@ -33,6 +34,7 @@
              * <2> = Quadratic. This is key for you. It starts much slower 
              * than linear but reaches a higher peak speed.
              */
+
             acceleration-exponent = <2>;
 
             /*
@@ -41,14 +43,17 @@
              * This widens the "precision window" before the cursor flies 
              * across the 49-inch screen.
              */
-            time-to-max-speed-ms = <1200>; 
+
+            time-to-max-speed-ms = <1200>;
 
             /*
              * 3. Delay:
              * Keep at 0 for instant response.
              */
+
             delay-ms = <0>;
         };
+
         ESC_CTRL: ESC_CTRL {
             compatible = "zmk,behavior-tap-dance";
             label = "ESC_CTRL";
@@ -282,10 +287,10 @@
         extra_layer_1 {
             display-name = "EXTRA 1";
             bindings = <
-&mt LCTRL ESCAPE  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans        &kp F22       &kp F21    &kp TAB  &layer_off  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &mmv MOVE_X(-600)  &mmv MOVE_X(600)
-&rgb_ug RGB_EFR   &bt BT_CLR      &kp F23          &trans        &trans        &trans     &kp F19  &layer_off  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans             &trans
-&bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &kp F24                         &mkp LCLK       &mkp RCLK       &mkp MCLK     &trans           &trans             &trans
-                                                   &kp LGUI      &layer4_on    &kp ENTER                       &kp SPACE       &layer_off      &kp LG(A)
+&mt LCTRL ESCAPE  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans        &kp F22       &kp F21    &kp TAB  &layer_off  &msc SCRL_LEFT         &msc SCRL_DOWN         &msc SCRL_UP         &msc SCRL_RIGHT  &mmv MOVE_X(-600)  &mmv MOVE_X(600)
+&rgb_ug RGB_EFR   &bt BT_CLR      &kp F23          &trans        &trans        &trans     &kp F19  &layer_off  &mmv_custom MOVE_LEFT  &mmv_custom MOVE_DOWN  &mmv_custom MOVE_UP  &mmv MOVE_RIGHT  &trans             &trans
+&bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &kp F24                         &mkp LCLK              &mkp RCLK              &mkp MCLK            &trans           &trans             &trans
+                                                   &kp LGUI      &layer4_on    &kp ENTER                       &kp SPACE              &layer_off             &kp LG(A)
             >;
         };
 
