@@ -18,11 +18,37 @@
 
 / {
     behaviors {
+         /*
+         * DEFINITION: Optimized Scroll Behavior
+         * Precision: Scroll line-by-line initially.
+         * Speed: Scroll fast through pages after holding.
+         */
+        msc_custom: mouse_scroll_custom {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_HWHEEL>; // Horizontal scrolling
+            y-input-code = <INPUT_REL_WHEEL>;  // Vertical scrolling
+
+            /* * 1. Time to Max Speed:
+             * A bit shorter than mouse movement feels better for scrolling.
+             * <500> to <1000> is a good range.
+             */
+            time-to-max-speed-ms = <500>;
+            
+            /*
+             * 2. Acceleration Exponent:
+             * <0> = Constant speed (boring).
+             * <1> = Linear acceleration (safe).
+             * <2> = Quadratic (aggressive).
+             * Start with <1> for scrolling, as <2> can feel "jumpy" with scroll wheels.
+             */
+            acceleration-exponent = <1>; 
+        };
+
         /*
          * DEFINITION: Optimized Mouse Movement
          * Goal: High precision at start, high speed after hold
          */
-
         mmv_custom: mouse_move_custom {
             compatible = "zmk,behavior-input-two-axis";
             #binding-cells = <1>;
