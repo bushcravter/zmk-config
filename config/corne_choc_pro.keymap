@@ -23,30 +23,6 @@
          * Precision: Scroll line-by-line initially.
          * Speed: Scroll fast through pages after holding.
          */
-
-        msc_custom: mouse_scroll_custom {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_HWHEEL>; // Horizontal scrolling
-            y-input-code = <INPUT_REL_WHEEL>;  // Vertical scrolling
-            /* * 1. Time to Max Speed:
-             * A bit shorter than mouse movement feels better for scrolling.
-             * <500> to <1000> is a good range.
-             */
-
-            time-to-max-speed-ms = <500>;
-
-            /*
-             * 2. Acceleration Exponent:
-             * <0> = Constant speed (boring).
-             * <1> = Linear acceleration (safe).
-             * <2> = Quadratic (aggressive).
-             * Start with <1> for scrolling, as <2> can feel "jumpy" with scroll wheels.
-             */
-
-            acceleration-exponent = <1>;
-        };
-
         /*
          * DEFINITION: Optimized Mouse Movement
          * Goal: High precision at start, high speed after hold
@@ -316,9 +292,9 @@
         extra_layer_1 {
             display-name = "EXTRA 1";
             bindings = <
-&mt LCTRL ESCAPE  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans        &kp F22       &kp F21    &kp TAB  &layer_off  &msc_custom MOVE_LEFT  &msc_custom MOVE_DOWN  &msc_custom MOVE_UP  &msc_custom MOVE_RIGHT  &mmv MOVE_X(-600)  &mmv MOVE_X(600)
-&rgb_ug RGB_EFR   &bt BT_CLR      &kp F23          &trans        &trans        &trans     &kp F19  &layer_off  &mmv_custom MOVE_LEFT  &mmv_custom MOVE_DOWN  &mmv_custom MOVE_UP  &mmv MOVE_RIGHT         &trans             &trans
-&bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &kp F24                         &mkp LCLK              &mkp RCLK              &mkp MCLK            &trans                  &trans             &trans
+&mt LCTRL ESCAPE  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans        &kp F22       &kp F21    &kp TAB  &layer_off  &msc SCRL_LEFT         &msc SCRL_DOWN         &msc SCRL_UP         &msc SCRL_RIGHT  &mmv MOVE_X(-600)  &mmv MOVE_X(600)
+&rgb_ug RGB_EFR   &bt BT_CLR      &kp F23          &trans        &trans        &trans     &kp F19  &layer_off  &mmv_custom MOVE_LEFT  &mmv_custom MOVE_DOWN  &mmv_custom MOVE_UP  &mmv MOVE_RIGHT  &trans             &trans
+&bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4  &kp F24                         &mkp LCLK              &mkp RCLK              &mkp MCLK            &trans           &trans             &trans
                                                    &kp LGUI      &layer4_on    &kp ENTER                       &kp SPACE              &layer_off             &kp LG(A)
             >;
         };
