@@ -18,6 +18,37 @@
 
 / {
     behaviors {
+         /*
+         * DEFINITION: Optimized Mouse Movement
+         * Goal: High precision at start, high speed after hold
+         */
+        mmv_custom: mouse_move_custom {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+
+            /* * 1. Acceleration Exponent:
+             * <1> = Linear (Standard).
+             * <2> = Quadratic. This is key for you. It starts much slower 
+             * than linear but reaches a higher peak speed.
+             */
+            acceleration-exponent = <2>;
+
+            /*
+             * 2. Time to Max Speed:
+             * Standard is often ~300ms. Increase this to 1000ms or 1500ms.
+             * This widens the "precision window" before the cursor flies 
+             * across the 49-inch screen.
+             */
+            time-to-max-speed-ms = <1200>; 
+
+            /*
+             * 3. Delay:
+             * Keep at 0 for instant response.
+             */
+            delay-ms = <0>;
+        };
         ESC_CTRL: ESC_CTRL {
             compatible = "zmk,behavior-tap-dance";
             label = "ESC_CTRL";
