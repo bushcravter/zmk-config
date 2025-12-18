@@ -19,15 +19,9 @@
 / {
     behaviors {
         /*
-         * DEFINITION: Optimized Scroll Behavior
-         * Precision: Scroll line-by-line initially.
-         * Speed: Scroll fast through pages after holding.
-         */
-        /*
          * DEFINITION: Optimized Mouse Movement
          * Goal: High precision at start, high speed after hold
          */
-
         mmv_custom: mouse_move_custom {
             compatible = "zmk,behavior-input-two-axis";
             #binding-cells = <1>;
