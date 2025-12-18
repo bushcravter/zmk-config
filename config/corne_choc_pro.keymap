@@ -162,9 +162,9 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(125,86,25)>,
+                <&rgb_ug RGB_ON>,
                 <&macro_tap>,
-                <&rgb_ug RGB_TOG>,
+                <&rgb_ug RGB_COLOR_HSB(125,86,25)>,
                 <&macro_pause_for_release>,
                 <&to 3>;
 
