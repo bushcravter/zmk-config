@@ -243,7 +243,7 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&mt LCTRL ESC   &kp N1            &kp N2             &kp N3                 &kp N4     &kp N5            &kp TAB  &layer4_on     &kp N6     &kp N7    &kp N8   &kp N9     &kp N0            &kp DEL
+&mt LCTRL ESC   &kp N1            &kp N2             &kp N3                 &kp N4     &kp N5            &kp TAB  &kp LG(H)      &kp N6     &kp N7    &kp N8   &kp N9     &kp N0            &kp DEL
 &kp LEFT_SHIFT  &kp LS(NUMBER_7)  &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp SLASH  &kp LS(NUMBER_5)  &kp F19  &kp LG(SPACE)  &kp LEFT   &kp DOWN  &kp UP   &kp RIGHT  &mt LCTRL ESC     &kp CAPS
 &kp LEFT_ALT    &trans            &trans             &trans                 &kp F17    &kp F15                                   &kp F12    &kp F16   &kp F14  &kp F13    &kp C_STOP_EJECT  &kp LEFT_SHIFT
                                                      &kp LGUI               &trans     &kp ENTER                                 &kp SPACE  &trans    &trans
