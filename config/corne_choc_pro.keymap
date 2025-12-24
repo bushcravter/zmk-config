@@ -262,7 +262,7 @@
             bindings = <
 &trans        &mt LS(NUMBER_9) LS(NUMBER_8)  &mt RA(NUMBER_0) RA(NUMBER_7)  &mt RA(NUMBER_9) RA(NUMBER_8)  &mt LS(NUBS) NUBS  &kp LS(NUMBER_6)  &trans  &kp LG(A)  &kp F1        &kp F2             &kp F3                   &kp F4                 &kp F5                &kp BSPC
 &trans        &kp LS(NUMBER_4)               &kp RA(Q)                      &kp RA(NON_US_BACKSLASH)       &kp LS(NUMBER_2)   &kp LS(NUMBER_0)  &trans  &kp CAPS   &trans        &sticky_key RCTRL  &sticky_key RIGHT_SHIFT  &sticky_key RIGHT_GUI  &sticky_key LEFT_ALT  &kp CAPS
-&kp LEFT_ALT  &kp LS(MINUS)                  &kp LS(NUMBER_1)               &kp BACKSLASH                  &kp LS(BACKSLASH)  &kp RA(MINUS)                        &kp C_VOL_DN  &kp C_VOLUME_UP    &kp C_MUTE               &kp LS(LA(LC(O)))      &kp LS(LA(LC(I)))     &kp LS(LA(LC(P)))
+&kp LEFT_ALT  &kp LS(MINUS)                  &kp LS(NUMBER_1)               &kp BACKSLASH                  &kp LS(BACKSLASH)  &kp RA(MINUS)                        &kp C_VOL_DN  &kp C_VOLUME_UP    &kp C_MUTE               &kp LC(LG(O))          &kp LC(LG(I))         &kp LC(LG(P))
                                                                             &kp LGUI                       &layer3_on         &kp ENTER                            &kp SPACE     &trans             &kp RALT
             >;
         };
