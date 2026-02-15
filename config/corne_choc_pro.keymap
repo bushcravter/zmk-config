@@ -126,6 +126,23 @@
     };
 
     macros {
+         /* * Swapper Macro for Niri on Arch:
+         * Pressing the key holds LALT and taps TAB.
+         * Keeping the key held keeps LALT active.
+         * Releasing the key finally releases LALT.
+         */
+        alt_tab_swap: alt_tab_swap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp TAB>
+                , <&macro_pause_for_release>
+                , <&macro_release &kp LALT>;
+        };
+
         layer1_red: to_layer1_red {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
